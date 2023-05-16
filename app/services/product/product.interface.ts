@@ -26,4 +26,5 @@ export interface IProduct {
   title: string
   priceWithDiscount: number
   productPath: string
+  count: number
 }
