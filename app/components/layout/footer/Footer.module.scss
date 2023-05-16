@@ -1,0 +1,54 @@
+@import "../../../../styles/variabless";
+
+.footer {
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: $lightgrey;
+    margin: 40px 0;
+  }
+  &__container {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+  &__content {
+    &__navigation {
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      &__items {
+        h2 {
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 130%;
+          color: $black;
+        }
+        &__number {
+          padding-top: 15px;
+        }
+        &__list {
+          padding: 0;
+          margin: 0;
+          &__item {
+            padding: 10px 0;
+            list-style: none;
+            &__link {
+              text-decoration: none;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 130%;
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+    &__discription {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      color: $grey;
+      margin-top: 40px;
+    }
+  }
+}

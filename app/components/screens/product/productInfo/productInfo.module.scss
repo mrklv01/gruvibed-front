@@ -1,0 +1,21 @@
+.ProductInfo {
+  margin-top: 50px;
+  margin-bottom: 65px;
+  &__content {
+    &__title {
+      margin-bottom: 65px;
+      h3 {
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 130%;
+        color: #1a1a1a;
+      }
+    }
+    &__body {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 150%;
+      color: #1a1a1a;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.category__item {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    width: 22px;
+    padding: 0;
+    margin: 0;
+    height: 22px;
+    position: relative;
+    &::after {
+      content: "";
+      background-position: center;
+      background-size: contain;
+      width: 8px;
+      height: 1px;
+      top: 50%;
+      left: 20%;
+      transform: rotate(45deg);
+      position: absolute;
+      display: none;
+      background-color: #0075ff;
+    }
+    &::before {
+      content: "";
+      background-position: center;
+      background-size: contain;
+      width: 8px;
+      height: 1px;
+      top: 50%;
+      left: 45%;
+      transform: rotate(-45deg);
+      position: absolute;
+      display: none;
+      background-color: #0075ff;
+    }
+    &:checked {
+      background: #e2eeff;
+      border: 1px solid #0075ff;
+    }
+    &:checked::after {
+      display: block;
+    }
+    &:checked::before {
+      display: block;
+    }
+  }
+  label {
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: gray;
+  }
+}

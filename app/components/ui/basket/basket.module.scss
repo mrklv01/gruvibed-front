@@ -1,0 +1,169 @@
+.basket {
+  &__wrapper {
+    position: relative;
+  }
+  &__modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    z-index: 100;
+  }
+  &__form {
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    background: #ffffff;
+    padding: 20px 30px;
+    &__title {
+      margin-bottom: 20px;
+      text-align: left;
+      p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        color: #63686d;
+      }
+    }
+    &__products {
+      height: 380px;
+      overflow-y: scroll;
+      &__product {
+        display: flex;
+        align-items: center;
+        &__left {
+          display: flex;
+          align-items: center;
+          width: 50%;
+          &__img {
+            img {
+              object-fit: contain;
+              width: 200px;
+              height: 200px;
+            }
+          }
+          &__description {
+            text-align: left;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #545454;
+            &__title {
+            }
+            &__discount {
+              color: #005bcc;
+            }
+          }
+        }
+        &__center {
+          &__count {
+            display: flex;
+            align-items: center;
+            &__value {
+              input {
+                width: 50px;
+                text-align: center;
+                margin: 0;
+              }
+              input::-webkit-outer-spin-button,
+              input::-webkit-inner-spin-button {
+                /* display: none; <- Crashes Chrome on hover */
+                -webkit-appearance: none;
+                margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+              }
+            }
+            &__change {
+              button {
+                background: none;
+                border: none;
+                color: #005bcc;
+                font-size: 50px;
+                cursor: pointer;
+              }
+              &:last-child {
+                button {
+                  font-size: 35px;
+                }
+              }
+            }
+          }
+        }
+        &__right {
+          margin-left: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 30%;
+          &__price {
+            &__title {
+              margin-bottom: 8px;
+            }
+            &__usually {
+              color: #878787;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 130%;
+              text-decoration: line-through #d1d1d1;
+              margin-bottom: 10px;
+            }
+            &__discount {
+              color: #545454;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 130%;
+              margin-bottom: 10px;
+            }
+          }
+          &__delete {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &__ordering {
+      padding-right: 30px;
+      text-align: right;
+      margin-top: 20px;
+      &__price {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+        color: #1a1a1a;
+        margin-bottom: 10px;
+      }
+      &__sumbit {
+        button {
+          border: none;
+          color: #005bcc;
+          background-color: #e0eeff;
+          border-radius: 12px;
+          padding: 10px 20px;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 130%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &__open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    color: #63686d;
+    cursor: pointer;
+  }
+}

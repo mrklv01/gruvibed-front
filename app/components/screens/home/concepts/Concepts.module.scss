@@ -1,0 +1,36 @@
+.ideasHome {
+  &__content {
+    &__title {
+      margin-bottom: 60px;
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 130%;
+        color: #1a1a1a;
+      }
+      margin-bottom: 65px;
+    }
+    &__ideas {
+      display: flex;
+      justify-content: space-between;
+      &__item {
+        position: relative;
+        &__description {
+          position: absolute;
+          bottom: 5%;
+          left: 5%;
+          p {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 130%;
+            color: #ffffff;
+          }
+        }
+        &__img {
+        }
+      }
+    }
+  }
+  margin-bottom: 60px;
+}

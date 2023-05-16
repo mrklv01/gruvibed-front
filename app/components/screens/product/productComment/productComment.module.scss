@@ -1,0 +1,104 @@
+.ProductComment {
+  &__content {
+    &__title {
+      h3 {
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 130%;
+        color: #1a1a1a;
+        margin-bottom: 20px;
+        a {
+          margin-left: 30px;
+          color: #005bcc;
+        }
+      }
+    }
+    &__sort {
+      margin-bottom: 40px;
+      ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        .selected {
+          color: #005bcc;
+        }
+        li {
+          margin-right: 40px;
+          :last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    &__comments {
+      &__comment {
+        margin-bottom: 40px;
+        &__top {
+          display: flex;
+          align-items: center;
+          &__creator {
+            margin-right: 30px;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 130%;
+            color: #1a1a1a;
+          }
+          &__stars {
+            margin-top: 8px;
+            display: flex;
+            &__star {
+              margin-right: 12px;
+              &:last-child {
+                margin-right: 0px;
+              }
+            }
+          }
+          &__published {
+            margin-top: 4px;
+            margin-left: 30px;
+            p {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 150%;
+              color: #878787;
+            }
+          }
+        }
+        &__body {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          &__description {
+            p {
+              font-weight: 400;
+              font-size: 28px;
+              line-height: 150%;
+              color: #1a1a1a;
+            }
+          }
+        }
+        &__bottom {
+          display: flex;
+          align-items: center;
+          p {
+            margin-left: 10px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            color: #1a1a1a;
+          }
+          svg {
+            cursor: pointer;
+          }
+          &__like {
+            display: flex;
+            margin-right: 20px;
+          }
+          &__dislike {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

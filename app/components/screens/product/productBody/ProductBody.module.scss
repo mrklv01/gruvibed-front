@@ -1,0 +1,110 @@
+.ProductBody {
+  margin-top: 60px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &__title {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 130%;
+      color: #020202;
+    }
+    &__left {
+      display: flex;
+      &__main {
+      }
+      &__additionally {
+      }
+    }
+    &__right {
+      background: #eeeeee;
+      max-width: 454px;
+      width: 454px;
+      padding: 41px 33px 20px 33px;
+      &__content {
+        &__top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &__left {
+            p {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 130%;
+              a {
+                color: #a4a3a3;
+                margin-right: 10px;
+              }
+            }
+          }
+          &__right {
+            display: flex;
+            &__comparison {
+              margin-right: 20px;
+            }
+            &__favorite {
+            }
+          }
+        }
+        &__middle {
+          margin: 20px 0;
+
+          &__description {
+            p {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 130%;
+              color: #020202;
+            }
+          }
+          &__stars {
+            margin-top: 10px;
+            display: flex;
+            &__star {
+              margin-right: 12px;
+            }
+            &__count {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 150%;
+              color: #878787;
+              margin-left: 3px;
+            }
+          }
+        }
+        &__bottom {
+          margin-top: 10px;
+          &__status {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #000000;
+          }
+          &__price {
+            margin-top: 21px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #000000;
+          }
+          &__buy {
+            text-align: center;
+            margin-top: 20px;
+
+            button {
+              background: #005bcc;
+              border-radius: 100px;
+              border: none;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 130%;
+              color: #ffffff;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

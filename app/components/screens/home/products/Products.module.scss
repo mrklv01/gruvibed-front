@@ -1,0 +1,23 @@
+.producstHome {
+  &__content {
+    &__title {
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 130%;
+        color: #1a1a1a;
+      }
+
+      margin-bottom: 65px;
+    }
+
+    &__products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  margin-bottom: 20px;
+}

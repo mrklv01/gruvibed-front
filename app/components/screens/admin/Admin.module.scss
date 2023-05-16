@@ -1,0 +1,135 @@
+.admin {
+  &__container {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
+  &__users {
+    &__create {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 130%;
+      color: #005bcc;
+    }
+    &__content {
+      &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          margin-left: 10px;
+        }
+      }
+      &__back {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #005bcc;
+      }
+      &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 130%;
+        color: #1a1a1a;
+      }
+      &__count {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: #1a1a1a;
+      }
+      &__items {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 380px);
+        row-gap: 20px;
+        column-gap: 60px;
+
+        &__item {
+          padding: 10px 0;
+          display: flex;
+          flex-direction: column;
+          max-width: 350px;
+          width: 100%;
+
+          &__info {
+            &__email {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 30px;
+              line-height: 130%;
+              color: #1a1a1a;
+            }
+            &__login {
+              margin-top: 10px;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 22px;
+              line-height: 130%;
+              color: #1a1a1a;
+            }
+            &__phone {
+              margin-top: 10px;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 22px;
+              line-height: 130%;
+              color: #1a1a1a;
+            }
+          }
+
+          &__buttons {
+            margin-top: 10px;
+            &__update {
+              padding: 0;
+              background: none;
+              border: none;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 130%;
+              color: #005bcc;
+              cursor: pointer;
+            }
+            &__remove {
+              cursor: pointer;
+              background: none;
+              border: none;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 130%;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 20px;
+      text-decoration: none;
+      color: #005bcc;
+    }
+  }
+}

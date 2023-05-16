@@ -1,0 +1,40 @@
+.first {
+  &__container {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1a1a1a;
+  }
+  &__main {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    color: #1a1a1a;
+  }
+  &__block {
+  }
+  &__weight {
+    display: block;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: #1a1a1a;
+  }
+  &__desc {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #434343;
+  }
+}
