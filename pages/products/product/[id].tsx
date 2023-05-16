@@ -30,6 +30,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return {
       paths: [],
       fallback: false,
+      props: { products: null },
     }
   }
 }
@@ -49,6 +50,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         user: {},
         error: e,
       },
+      fallback: false,
     }
   }
 }

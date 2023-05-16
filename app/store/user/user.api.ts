@@ -5,7 +5,7 @@ export const userApi = createApi({
   reducerPath: "api/user",
   tagTypes: ["User"],
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:8080/api/",
+    baseUrl: `${process.env.API_URL}/api`,
     prepareHeaders: (headers) => {
       headers.set("authorization", `Bearer ${Cookies.get("accessToken")}`)
       return headers

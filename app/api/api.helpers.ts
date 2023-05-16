@@ -1,4 +1,4 @@
-export const getContentType = () => ({ "Content-Type": "application/json", })
+export const getContentType = () => ({ "Content-Type": "application/json" })
 
 export const errorCatch = (error: any): string => {
   const message = error?.response?.data?.message

@@ -8,15 +8,12 @@ import { categoryApi } from "./category/category.api"
 const store = configureStore({
   reducer: rootReducer,
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-    }).concat(
+    getDefaultMiddleware({}).concat(
       userApi.middleware,
       adminApi.middleware,
       categoryApi.middleware
-
     ),
 })
-
 
 export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch

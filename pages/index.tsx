@@ -11,13 +11,13 @@ const HomePage = dynamic(() => import("../app/components/screens/home/Home"), {
 export default function Home({ products }: any) {
   return <HomePage products={products} />
 }
-//@ts-ignore
+
 export const getStaticProps: GetStaticProps = async () => {
   try {
     const { data: products } = await apiAxios.get("product/all")
 
     return { props: { products } }
   } catch (e) {
-    return { fallback: false }
+    return { fallback: false, props: { products: null } }
   }
 }
