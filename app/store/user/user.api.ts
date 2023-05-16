@@ -5,7 +5,7 @@ export const userApi = createApi({
   reducerPath: "api/user",
   tagTypes: ["User"],
   baseQuery: fetchBaseQuery({
-    baseUrl: `${process.env.API_URL}/api`,
+    baseUrl: `https://gruvibed-back.herokuapp.com/api`,
     prepareHeaders: (headers) => {
       headers.set("authorization", `Bearer ${Cookies.get("accessToken")}`)
       return headers

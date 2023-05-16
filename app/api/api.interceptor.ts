@@ -15,7 +15,7 @@ import { getAccessToken } from "@/app/services/auth/auth.helper"
 // })
 
 const apiAxios = axios.create({
-  baseURL: `${process.env.API_URL}/api`,
+  baseURL: `https://gruvibed-back.herokuapp.com/api`,
   headers: getContentType(),
 })
 
