@@ -10,7 +10,7 @@ export const register: any = createAsyncThunk<AuthInterface, IAuthForm>(
   async ({ email, password, login }: IAuthForm) => {
     try {
       const response = await AuthService.register(email, password, login)
-      return response.data
+      return response?.data
     } catch (error) {
       return console.log(error)
     }
@@ -23,8 +23,8 @@ export const login: any = createAsyncThunk<AuthInterface, IAuthForm>(
   async ({ email, password }: IAuthForm) => {
     try {
       const response = await AuthService.login(email, password)
-      await saveToStorage(response.data)
-      return response.data
+      await saveToStorage(response?.data)
+      return response?.data
     } catch (error) {
       return console.log(error)
     }
