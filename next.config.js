@@ -14,7 +14,12 @@ const nextConfig = {
       "https://gruvibed-back.herokuapp.com/",
       "https://gruvibed-back.herokuapp.com/api",
       "https://gruvibed-back.herokuapp.com/api/files",
-      "https://gruvibed-back.herokuapp.com/api/files/uploads"
+      "https://gruvibed-back.herokuapp.com/api/files/uploads",
+      "gruvibed-back.herokuapp.com/",
+      "gruvibed-back.herokuapp.com/api",
+      "gruvibed-back.herokuapp.com/api/files",
+      "gruvibed-back.herokuapp.com/api/files/uploads"
+      
     ],
   },
 };
