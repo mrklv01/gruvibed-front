@@ -1,4 +1,4 @@
-const nextjsDistDir = join("src", require("./src/next.config.js").distDir);
+const nextjsDistDir = join("src", require("./next.config.js").distDir);
 const nextjsServer = next({
   dev: isDev,
   conf: {
