@@ -41,7 +41,7 @@ const ProductCard = ({
     productPath,
   }
   const dispatch = useAppDispatch()
-
+console.log(productPath)
   return (
     <div className={styles.ProductCard__content}>
       <div className={styles.ProductCard__content__top}>
