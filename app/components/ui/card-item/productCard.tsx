@@ -49,6 +49,7 @@ console.log(productPath)
         <Link href={`products/product/${id}`} className={styles.ProductCard}>
           <div className={styles.ProductCard__content__top__img}>
             <Image
+              loader={()=>productPath}
               src={`https://gruvibed-back.herokuapp.com/api/files/${productPath}`}
               width={399}
               height={244.92}
