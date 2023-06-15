@@ -110,7 +110,7 @@ const ProductCard = ({
             <p>{price}тг</p>
           </div>
           <div className={styles.ProductCard__content__bottom__price__count}>
-            <p>Кол-во: {count}</p>
+            <p>Кол-во: {product.count}</p>
           </div>
         </div>
         {type ? (
