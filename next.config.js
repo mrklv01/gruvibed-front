@@ -11,6 +11,10 @@ const nextConfig = {
       "http://localhost:8080/api/files/",
       "http://localhost:8080/api/",
       "http://localhost/",
+      "https://gruvibed-back.herokuapp.com/",
+      "https://gruvibed-back.herokuapp.com/api",
+      "gruvibed-back.herokuapp.com/",
+      "gruvibed-back.herokuapp.com/api"
     ],
   },
 };

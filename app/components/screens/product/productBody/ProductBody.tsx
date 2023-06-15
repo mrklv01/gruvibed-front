@@ -43,7 +43,9 @@ const ProductBody = ({
         <div className={styles.ProductBody__content__left}>
           <div className={styles.ProductBody__content__left__main}>
             <Image
-              src={`http://localhost:8080/api/files/${product.productPath}`}
+              loader={()=>`https://gruvibed-back.herokuapp.com/api/files/${product.productPath}`}
+              //src={`http://localhost:8080/api/files/${product.productPath}`}
+              src={`https://gruvibed-back.herokuapp.com/api/files/${product.productPath}`}
               alt=''
               width={553}
               height={284}
